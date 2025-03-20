@@ -3,7 +3,7 @@ import requests
 import geopy
 
 Paikkakunta = "Helsinki"
-APIKey = "7b8eab2690bd9d85452ab3ce66b3c637"
+APIKey = ""
 excludelista = "minutely,hourly,daily,alerts"
 lat = ""
 lon = ""
