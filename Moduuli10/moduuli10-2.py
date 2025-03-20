@@ -4,7 +4,7 @@ class Talo:
         self.ylin_kerros = ylin_kerros
         self.hissit = []
         for i in range(hissien_maara):
-            self.hissit.append(Hissi())
+            self.hissit.append(Hissi(self.alin_kerros, self.ylin_kerros))
 
     def aja_hissia(self, hissin_numero, kohdekerros):
         if kohdekerros > self.ylin_kerros:
@@ -14,9 +14,9 @@ class Talo:
         self.hissit[hissin_numero-1].siirry_kerrokseen(kohdekerros)
 
 class Hissi:
-    def __init__(self):
-        self.alin = 0
-        self.ylin = 10
+    def __init__(self, alin, ylin):
+        self.alin = alin
+        self.ylin = ylin
         self.kerros = self.alin
 
     def kerros_ylos(self):
