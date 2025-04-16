@@ -11,15 +11,15 @@ def alkuluku(kokonaisluku):
     
 
     if primecount < 0:
-        vastaus = {
-            "Number": prime,
-            "isPrime": False
-        }
+        isPrime = False
     else:
-        vastaus = {
+        isPrime = True
+        
+    vastaus = {
             "Number": prime,
-            "isPrime": True
+            "isPrime": isPrime
         }
+        
     return vastaus
 
 if __name__ == "__main__":
